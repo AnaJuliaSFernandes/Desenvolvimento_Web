@@ -1,0 +1,29 @@
+/*comentario css seletor de elementos 14*/
+h1, h2 {
+    color: brown;
+}
+
+#para1 {
+    color: rgb(202, 70, 110); 
+    border-style: solid; 
+    padding: 10px; 
+    border-radius: 30px;
+}
+/*seletor de ID*/
+#para2 {
+    background-color: rgb(161, 87, 87);
+    padding: 10px;
+    border-radius: 30px;
+}
+/*seletor de classe*/
+
+.estilo {
+    border-style: solid;
+    color:rgb(10, 9, 9);
+    padding: 10px;
+    border-radius: 30px;
+}
+/*afeta apenas os paragrafos da classe centraliza*/
+h1, h2, p.centraliza {
+    text-align: center;
+}
