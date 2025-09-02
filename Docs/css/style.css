@@ -1,0 +1,38 @@
+/*seletor id*/
+body{
+    background-color: rgb(231, 221, 221);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*seletor de classe*/
+.central {
+    text-align: center;
+}
+
+.item-menu {
+    display: inline;
+    margin: 0.7rem;
+    background-color: rgb(204, 204, 204);
+    padding: 0.7rem;
+    padding-right: 0.1rem;
+    border-right-style: solid;
+    border-color: rgb(177, 177, 177);
+}
+
+.item-menu:hover{
+    background-color: rgb(85, 68, 68);
+}
+
+.item-menu a:hover {
+    text-decoration: none;
+    color: rgb(104, 134, 124);
+}
+
+.menu {
+    background-color: rgb(204, 204, 204);
+    padding: 0.6rem;
+}
+
+td {
+    padding: 0.7rem;
+}
