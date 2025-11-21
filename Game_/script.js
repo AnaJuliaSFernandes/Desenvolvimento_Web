@@ -1,4 +1,16 @@
  function calcularPontuacao() {
+
+        if (!document.querySelector('input[name="q1"]:checked') ||
+            document.querySelectorAll('input[name="q2"]:checked').length === 0 ||
+            document.querySelector('select[name="q3"]').value === "" ||
+            !document.querySelector('input[name="q4"]:checked') ||
+            !document.querySelector('input[name="q5"]:checked') ||
+            document.querySelector('select[name="q6"]').value === ""
+            ) {
+                document.getElementById("resultado").innerText = "Responda todas as questões!";
+                return;
+            }
+
         let pontos = 0;
 
         const q1 = document.querySelector('input[name="q1"]:checked');
@@ -25,7 +37,7 @@
         let msg = "";
 
         if (pontos === 6) {
-            msg = "Parabéns! Você acertou tudo! Pontuação: " + pontos;
+            msg = "Parabéns! Pontuação: " + pontos;
         } else if (pontos >= 3) {
             msg = "Bom trabalho! Pontuação: " + pontos;
         } else {
@@ -33,4 +45,10 @@
         }
 
         document.getElementById("resultado").innerText = msg;
+
     }
+    
+function limpar() {
+    document.getElementById("gameForm").reset();
+    document.getElementById("resultado").innerText = "";
+}
